@@ -96,7 +96,7 @@
 									<div class = 'col-md-3'>
 										<center>
 											<button onclick = "$('#modal1').modal('show') , $('#modal2').modal('hide') , $('#modal3').modal('hide')"class="btn btn-primary " data-toggle="modal" data-target="#myModal">
-												<i class="material-icons">library_books</i> Menu del dia
+												Menu del dia
 												<div class="ripple-container"></div>
 											</button>
 										</center>
@@ -105,7 +105,7 @@
 									<div class = 'col-md-3'>
 										<center>
 											<button onclick = "$('#modal1').modal('hide') , $('#modal2').modal('hide') , $('#modal3').modal('show') "class="btn btn-primary " data-toggle="modal" data-target="#myModal">
-												<i class="material-icons">library_books</i> Tips Nutricionales
+												Tips Nutrición
 												<div class="ripple-container"></div>
 											</button>
 										</center>
@@ -115,7 +115,7 @@
 										
 										<center>
 											<button onclick = "$('#modal1').modal('hide') , $('#modal2').modal('show') , $('#modal3').modal('hide') " class="btn btn-primary " data-toggle="modal" data-target="#myModal">
-												<i class="material-icons">dashboard</i>Codigo QR
+												&nbsp;&nbsp;&nbsp;Codigo QR&nbsp;&nbsp;&nbsp;
 												<div class="ripple-container"></div>
 											</button>
 										</center>
@@ -168,7 +168,7 @@
 					<h4 class="modal-title">Codigo QR</h4>
 				</div>
 				<div class="modal-body">
-					<center><img src="http://chart.apis.google.com/chart?cht=qr&chs=150x150&chl=1100342904" alt="qr" class="img-thumbnail"></center>
+					<center><img src="" alt="qr" class="img-thumbnail" id ="fotoQr" ></center>
 				</div>
 				<div class="modal-footer">
 					
@@ -222,6 +222,9 @@
 	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
 	<script src="assets/js/material-kit.js" type="text/javascript"></script>
 	<script>
+		$(document).ready(function(){
+			$('#fotoQr').attr('src','http://chart.apis.google.com/chart?cht=qr&chs=150x150&chl=1100342904')
+		})
 		function valida_datos(){
 				var e = $('#username').val();
 				var email = $('#username').val();
