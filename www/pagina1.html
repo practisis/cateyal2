@@ -27,7 +27,7 @@
 	</style>
 </head>
 
-<body class="signup-page" onload="setupqr()">
+<body class="signup-page" onload="setupqr()" style="background-image: url('assets/img/city.jpg'); background-size: cover; background-position: top center;">
 	<nav class="navbar navbar-transparent navbar-absolute">
     	<div class="container">
         	<!-- Brand and toggle get grouped for better mobile display -->
@@ -79,7 +79,7 @@
     </nav>
 
     <div class="wrapper">
-		<div class="header header-filter" style="background-image: url('assets/img/city.jpg'); background-size: cover; background-position: top center;">
+		<div class="header header-filter" >
 			<div class="container">
 				<br>
 				<div class="row">
@@ -96,7 +96,7 @@
 									<div class = 'col-md-3'>
 										<center>
 											<button onclick = "$('#modal1').modal('show') , $('#modal2').modal('hide') , $('#modal3').modal('hide')"class="btn btn-primary " data-toggle="modal" data-target="#myModal">
-												Menu del dia
+												<i class="fa fa-cutlery" aria-hidden="true"></i>  Menu del dia
 												<div class="ripple-container"></div>
 											</button>
 										</center>
@@ -105,7 +105,7 @@
 									<div class = 'col-md-3'>
 										<center>
 											<button onclick = "$('#modal1').modal('hide') , $('#modal2').modal('hide') , $('#modal3').modal('show') "class="btn btn-primary " data-toggle="modal" data-target="#myModal">
-												Tips Nutrición
+												<i class="fa fa-list-ol" aria-hidden="true"></i>  Tips Nutrición
 												<div class="ripple-container"></div>
 											</button>
 										</center>
@@ -115,7 +115,7 @@
 										
 										<center>
 											<button onclick = "$('#modal1').modal('hide') , $('#modal2').modal('show') , $('#modal3').modal('hide') , doqr()" class="btn btn-primary " data-toggle="modal" data-target="#myModal">
-												&nbsp;&nbsp;&nbsp;Codigo QR&nbsp;&nbsp;&nbsp;
+												<i class="fa fa-qrcode" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Codigo QR&nbsp;&nbsp;&nbsp;
 												<div class="ripple-container"></div>
 											</button>
 										</center>
@@ -167,7 +167,7 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					<h4 class="modal-title">Codigo QR</h4>
 				</div>
-				<div class="modal-body" style ="background-color: #4a4a4a;text-align: center;padding-left: 20%">
+				<div class="modal-body" style ="background-color: #4a4a4a;text-align: center;">
 					<div id="qrdiv">
 					    
 					  <form name="qrinp" style = "display:none;">
