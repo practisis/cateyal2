@@ -134,7 +134,17 @@
 		</div>
 
     </div>
-
+<style>
+		.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+			padding: 8px;
+			line-height: 1.42857143;
+			vertical-align: top;
+			border-top: 0 !important;
+		}
+		.tabless{
+			width:100%;
+		}
+	</style>
 	<div data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -143,7 +153,65 @@
 					<h4 class="modal-title">Menú del Día</h4>
 				</div>
 				<div class="modal-body" id = 'recibeMenu'>
-					<iframe src = 'http://www.lcodigo.com/cateyal_paginal/menu.php?diaA=miercoles' frameborder = '0' width = '100%' height = '430px' ></iframe>
+					<!--<iframe src = 'http://www.lcodigo.com/cateyal_paginal/menu.php?diaA=miercoles' frameborder = '0' width = '100%' height = '430px' ></iframe>-->
+					<ul class="list-group">
+						<li class="list-group-item listas">
+							<table class="tabless">
+								<tbody><tr>
+									<td colspan="2" style="text-transform:uppercase;text-align:center;font-size:2vw;font-weight:bold;">
+										miercoles					</td>
+								</tr>
+							</tbody></table>
+						</li>
+									<li class="list-group-item listas">
+								<table class="tabless">
+									<tbody><tr>	
+										<td style="text-align:left;padding:10px;width:50%;">sopa</td>
+										<td style="text-align:left;padding:10px;width:50%;">sopa 1</td>
+									</tr>
+								</tbody></table>
+							</li>
+									<li class="list-group-item listas">
+								<table class="tabless">
+									<tbody><tr>	
+										<td style="text-align:left;padding:10px;width:50%;">proteína</td>
+										<td style="text-align:left;padding:10px;width:50%;">lomo 1</td>
+									</tr>
+								</tbody></table>
+							</li>
+									<li class="list-group-item listas">
+								<table class="tabless">
+									<tbody><tr>	
+										<td style="text-align:left;padding:10px;width:50%;">guarnición</td>
+										<td style="text-align:left;padding:10px;width:50%;">arroz 1</td>
+									</tr>
+								</tbody></table>
+							</li>
+									<li class="list-group-item listas">
+								<table class="tabless">
+									<tbody><tr>	
+										<td style="text-align:left;padding:10px;width:50%;">ensalada</td>
+										<td style="text-align:left;padding:10px;width:50%;">tomate 1</td>
+									</tr>
+								</tbody></table>
+							</li>
+									<li class="list-group-item listas">
+								<table class="tabless">
+									<tbody><tr>	
+										<td style="text-align:left;padding:10px;width:50%;">postre</td>
+										<td style="text-align:left;padding:10px;width:50%;">fruta</td>
+									</tr>
+								</tbody></table>
+							</li>
+									<li class="list-group-item listas">
+								<table class="tabless">
+									<tbody><tr>	
+										<td style="text-align:left;padding:10px;width:50%;">jugo</td>
+										<td style="text-align:left;padding:10px;width:50%;">fruta</td>
+									</tr>
+								</tbody></table>
+							</li>
+							</ul>
 				</div>
 				<div class="modal-footer">
 					
@@ -192,7 +260,20 @@
 					<h4 class="modal-title">TIPS DE ALIMENTACÓN</h4>
 				</div>
 				<div class="modal-body" id = 'recibeTips'>
-					<iframe src = 'http://www.lcodigo.com/cateyal_paginal/tips.php' frameborder = '0' width = '100%' height = '430px' ></iframe>
+					<!--<iframe src = 'http://www.lcodigo.com/cateyal_paginal/tips.php' frameborder = '0' width = '100%' height = '430px' ></iframe>-->
+					<h4><b>Importancia de una buena nutrición en niños</b></h4>
+						<p>Una adecuada nutrición es primordial para los 
+					niños, ya que están en etapa de crecimiento y 
+					desarrollo</p>
+						<p><b>Beneficios de una buena nutrición:</b></p>
+						<ul class="list-group">
+							<li class="list-group-item listas">Nivel de energía adecuado para realizar todas las actividades diarias</li>
+							<li class="list-group-item listas">Óptima formación dehuesos, dientes y músculos fuertes</li>
+							<li class="list-group-item listas">Mejor sistema inmune para combatir enfermedades</li>
+							<li class="list-group-item listas">Mejor desempeño escolar</li>
+							<li class="list-group-item listas">Mayor capacidad de concentración</li>
+							<li class="list-group-item listas">Peso saludable para su estatura</li>
+						</ul>
 				</div>
 				<div class="modal-footer">
 					
