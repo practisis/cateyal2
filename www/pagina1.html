@@ -143,7 +143,7 @@
 					<h4 class="modal-title">Menú del Día</h4>
 				</div>
 				<div class="modal-body" id = 'recibeMenu'>
-					menu
+					<iframe src = 'http://www.lcodigo.com/cateyal_paginal/menu.php?diaA=miercoles' frameborder = '0' width = '100%' height = '430px' ></iframe>
 				</div>
 				<div class="modal-footer">
 					
@@ -163,7 +163,9 @@
 					<h4 class="modal-title">Codigo QR</h4>
 				</div>
 				<div class="modal-body" style ="background-color: #fff;text-align: center;padding:0px;padding-top:20px !important;padding-left:20px">
-					<div id="qrdiv">
+					
+					<i class="fa fa-qrcode fa-5x" aria-hidden="true"></i>
+					<!--<div id="qrdiv">
 					    
 					  <form name="qrinp" style = "display:none;">
 					    <input type="button" value="Go"/>
@@ -172,7 +174,7 @@
 					    Text:<textarea name="qrinput" size=2953>Hello World!</textarea><br>
 					  </form>
 					    <canvas id="qrcanv"/>No Canvas Support?
-					</div>
+					</div>-->
 				</div>
 				<div class="modal-footer">
 					
@@ -190,19 +192,7 @@
 					<h4 class="modal-title">TIPS DE ALIMENTACÓN</h4>
 				</div>
 				<div class="modal-body" id = 'recibeTips'>
-					<ul class="list-group">
-					  <li class="list-group-item listas">Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-					  <li class="list-group-item listas">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
-					  <li class="list-group-item listas">when an unknown printer took a galley of type and scrambled it to make a type specimen book</li>
-					  <li class="list-group-item listas">It has survived not only five centuries</li>
-					  <li class="list-group-item listas">but also the leap into electronic typesetting, remaining essentially unchanged</li>
-
-					  <li class="list-group-item listas">Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-					  <li class="list-group-item listas">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
-					  <li class="list-group-item listas">when an unknown printer took a galley of type and scrambled it to make a type specimen book</li>
-					  <li class="list-group-item listas">It has survived not only five centuries</li>
-					  <li class="list-group-item listas">but also the leap into electronic typesetting, remaining essentially unchanged</li>
-					</ul>
+					<iframe src = 'http://www.lcodigo.com/cateyal_paginal/tips.php' frameborder = '0' width = '100%' height = '430px' ></iframe>
 				</div>
 				<div class="modal-footer">
 					
@@ -227,15 +217,15 @@
 	<script src="assets/js/material-kit.js" type="text/javascript"></script>
 	<script>
 		function menu(){
-			alert('va')
+			<!-- alert('va') -->
 			var fecha=new Date();
 			var dias = new Array('domingo','lunes','martes','miercoles','juev es','viernes','sabado')
 			var diaA = dias[fecha.getDay()];
 			$.post("http://www.lcodigo.com/cateyal_paginal/menu.php",{ 
 				diaA : diaA
 			}).done(function(data){
-				alert('viene')
-				$('#recibeMenu').html(data);
+				<!-- alert('viene') -->
+				<!-- $('#recibeMenu').html(data); -->
 			});
 		}
 		
@@ -243,7 +233,7 @@
 			$.post("http://www.lcodigo.com/cateyal_paginal/tips.php",{ 
 					
 			}).done(function(data){
-				$('#recibeTips').html(data);
+				<!-- $('#recibeTips').html(data); -->
 			});
 		}
 		$(document).ready(function(){
